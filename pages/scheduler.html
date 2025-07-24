@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scheduler | Jeffery Harrold</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav><a href="../index.html" style="color:#FFD700;">← Back to Home</a></nav>
+  <main>
+    <h1>Scheduler</h1>
+    <p>Intro and prompt editor for Scheduler</p>
+    <textarea id="prompt-input" rows="6" cols="60" placeholder="Enter your prompt here..."></textarea><br><br>
+    <select id="ai-model">
+      <option value="gemini">Gemini</option>
+      <option value="chatgpt">ChatGPT</option>
+      <option value="claude">Claude</option>
+    </select>
+    <button onclick="generateAIResponse()">Run Prompt</button>
+    <pre id="ai-output"></pre>
+  </main>
+  <script src="../js/ai-router.js"></script>
+</body>
+</html>
